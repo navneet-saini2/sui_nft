@@ -8,13 +8,11 @@ This is a full-stack Sui Move + React dApp that allows users to:
 
 ---
 
-## 📸 Screenshots
+## 🖼️ Frontend UI Preview
+<img src="./frontend.png" width="600"/>
 
-### 🖼️ Frontend UI
-<img src="./frontend.png" alt="Sui NFT dApp UI" width="500"/>
-
-### ✅ Successful Minting & Transfer Proof
-<img src="./mint-transfer-proof.png" alt="Proof of Sui NFT mint and transfer" width="700"/>
+## ✅ On-Chain Mint & Transfer Proof (Sui Explorer)
+<img src="./mint-transfer-proof.png" width="600"/>
 
 ---
 
