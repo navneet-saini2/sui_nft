@@ -1,6 +1,6 @@
 module sui_nft::nft {
     use sui::object::{new};
-    use sui::tx_context::sender;
+    use sui::tx_context::{sender, TxContext}; // Ensure TxContext is imported here
     use std::string::String;
 
     /// A basic NFT struct with metadata.
@@ -11,7 +11,8 @@ module sui_nft::nft {
     }
 
     /// Mint a new NFT to the caller.
-    public fun mint(ctx: &mut TxContext, name: String, description: String) {
+    // *** IMPORTANT CHANGE HERE: 'ctx' moved to the end ***
+    public entry fun mint(name: String, description: String, ctx: &mut TxContext) {
         let nft = NFT {
             id: new(ctx),
             name,
@@ -22,9 +23,9 @@ module sui_nft::nft {
     }
 
     /// Transfer an NFT to another address.
-    public fun transfer_nft(nft: NFT, recipient: address) {
+    // *** IMPORTANT CHANGE HERE: 'ctx' moved to the end ***
+    public entry fun transfer_nft(nft: NFT, recipient: address, ctx: &mut TxContext) {
         sui::transfer::transfer(nft, recipient);
     }
 }
-
 
