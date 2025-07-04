@@ -48,7 +48,7 @@ npm run dev
 ```
 
 ### 🧪 4. On the browser:
-```bash
+
 - Connect your Sui Wallet (e.g., Suiet or Martian)
 - Fill NFT name + description → Click Mint NFT
 - Enter Object ID + Receiver Address → Click Transfer NFT
