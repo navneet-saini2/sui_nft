@@ -32,21 +32,30 @@ This is a full-stack Sui Move + React dApp that allows users to:
 ```bash
 git clone https://github.com/navneet-saini2/sui-nft-dapp.git
 cd sui-nft-dapp/frontend
-### 📦 2. Install dependencies
 
+```
+
+### 📦 2. Install dependencies
+```bash
 npm install
 
-### ▶️ 3. Run the development server
+```
 
+### ▶️ 3. Run the development server
+```bash
 npm run dev
 
-### 🧪 4. On the browser:
+```
 
+### 🧪 4. On the browser:
+```bash
 - Connect your Sui Wallet (e.g., Suiet or Martian)
 - Fill NFT name + description → Click Mint NFT
 - Enter Object ID + Receiver Address → Click Transfer NFT
 
-## 🚀 Deploy Smart Contract (CLI)
+```
 
+## 🚀 Deploy Smart Contract (CLI)
+```bash
 sui move build
 sui client publish --gas-budget 500000000
